@@ -25,16 +25,6 @@ flutter pub get
 flutter run
 ```
 
-## Тесты
-
-```bash
-cd tests
-pytest test_api.py test_dashboard.py -v
-bash test_integrity.sh
-```
-
-API-тесты — 15+ кейсов на `/api/dashboard` и `/api/dashboard/revenue`, в т.ч. кривые query-параметры (ловит `MethodArgumentTypeMismatchException`/`MissingServletRequestParameterException` через `GlobalExceptionHandler`, возвращает 400).
-
 ## Что внутри бэка
 
 - `controller/` — REST-эндпоинты
